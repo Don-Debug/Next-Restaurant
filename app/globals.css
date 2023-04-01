@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -83,18 +89,26 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  user-select: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #202020;
 }
-
+.bg-blured {
+  background-color: rgba(255, 255, 255, 0.575);
+  backdrop-filter: blur(20px);
+}
+.bg-small-menu {
+  background-color: rgba(255, 255, 255, 0.856);
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -103,5 +117,48 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.bg-hero-cool {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.534),
+      rgba(0, 0, 0, 0.541),
+      rgba(0, 0, 0, 0.527)
+    ),
+    url(../public/restaurant-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: cool-bg 14s linear infinite;
+}
+
+@keyframes cool-bg {
+  0% {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.534),
+        rgba(0, 0, 0, 0.541),
+        rgba(0, 0, 0, 0.527)
+      ),
+      url(../public/restaurant-1.jpg);
+  }
+  50% {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.534),
+        rgba(0, 0, 0, 0.541),
+        rgba(0, 0, 0, 0.527)
+      ),
+      url(../public/restaurant-2.jpg);
+  }
+  100% {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.534),
+        rgba(0, 0, 0, 0.541),
+        rgba(0, 0, 0, 0.527)
+      ),
+      url(../public/restaurant-3.jpg);
   }
 }

@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Teo Narte Restaurant",
+  title: "Teo Narte",
   description: "Created by Debug",
 };
 
