@@ -6,7 +6,7 @@ export default function About() {
     <div className=" flex flex-col justify-center items-center gap-[3rem] py-[10rem] sm:px-16 px-[1rem]">
       <h1 className="text-[2.2rem] font-bold">Rreth lokalit</h1>
       <div
-        className=" flex lg:flex-row flex-col xl:mx-[2rem] justify-around items-start gap-2 py-[6rem] mt-8
+        className=" flex lg:flex-row flex-col xl:mx-[2rem] justify-around items-start gap-2 sm:py-[6rem] py-[2rem] mt-8
       bg-blured sm:px-[4rem] px-[1.5rem] rounded-[4rem]"
       >
         <div className=" sm:w-[80%] lg:w-[60rem] px-[1rem] md:py-[3rem] py-0">
