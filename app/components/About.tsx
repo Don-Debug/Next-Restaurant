@@ -7,9 +7,9 @@ export default function About() {
       <h1 className="text-[2.2rem] font-bold">Rreth lokalit</h1>
       <div
         className=" flex lg:flex-row flex-col xl:mx-[2rem] justify-around items-start gap-2 py-[6rem] mt-8
-      bg-blured sm:px-[4rem] px-[2rem] rounded-[4rem]"
+      bg-blured sm:px-[4rem] px-[1.5rem] rounded-[4rem]"
       >
-        <div className=" sm:w-[30rem] lg:w-[60rem] px-[1rem] py-[3rem]">
+        <div className=" sm:w-[80%] lg:w-[60rem] px-[1rem] md:py-[3rem] py-0">
           <p className="md:text-[1.3rem] text-[1.2rem]">
             Miresevini ne restorantin tone tradicional. Ushqimet me te fresketa
             dhe te shijeshme do to gjeni vetem tek ne. Sherbimi me i shpejte ne
