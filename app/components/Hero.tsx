@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <div className=" bg-hero-cool h-screen rounded-b-[2rem]">
+    <div className=" bg-hero-cool h-screen rounded-b-[2rem] box-shadow">
       <div className=" py-8 px-8 relative">
         <Navbar />
       </div>

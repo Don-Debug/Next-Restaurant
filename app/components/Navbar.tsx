@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div
       className=" flex justify-between items-center md:px-14 px-5 md:py-5 py-2
-     bg-blured rounded-[3rem] fixed z-40 w-[97%] top-[2rem] md:left-4 sm:left-2 left-1 right-4"
+     bg-blured rounded-[3rem] fixed z-40 w-[97%] lg:top-[1rem] top-[0.3rem] md:left-4 sm:left-2 left-1 right-4"
     >
       <div className=" flex justify-center items-center gap-2 ">
         <Image
@@ -25,17 +25,23 @@ export default function Navbar() {
       <div>
         <ul className="justify-center items-center gap-9  sm:flex hidden">
           <li>
-            <Link href={`/`} className="text-[1.2rem]">
+            <Link
+              href={`/`}
+              className="text-[1.2rem] "
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link href={`/`} className="text-[1.2rem]">
+            <Link href={`#about`} className="text-[1.2rem]">
               About
             </Link>
           </li>
           <li>
-            <Link href={`/`} className="text-[1.2rem]">
+            <Link href={`#location`} className="text-[1.2rem]">
               Location
             </Link>
           </li>
@@ -61,22 +67,47 @@ export default function Navbar() {
           >
             <ul className=" list-none flex justify-center items-center text-center flex-col gap-6 w-full px-2 py-1">
               <li>
-                <Link href={`/`} className="text-[1.2rem] text-slate-600">
+                <Link
+                  href={`/`}
+                  className="text-[1.2rem] text-slate-600"
+                  onClick={() => {
+                    setToggle(!toggle);
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href={`/`} className="text-[1.2rem] text-slate-600">
+                <Link
+                  href={`#about`}
+                  className="text-[1.2rem] text-slate-600"
+                  onClick={() => {
+                    setToggle(!toggle);
+                  }}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href={`/`} className="text-[1.2rem] text-slate-600">
+                <Link
+                  href={`#location`}
+                  className="text-[1.2rem] text-slate-600"
+                  onClick={() => {
+                    setToggle(!toggle);
+                  }}
+                >
                   Location
                 </Link>
               </li>
               <li>
-                <Link href={`/menu`} className="text-[1.2rem] text-slate-600">
+                <Link
+                  href={`/menu`}
+                  className="text-[1.2rem] text-slate-600"
+                  onClick={() => {
+                    setToggle(!toggle);
+                  }}
+                >
                   Menu
                 </Link>
               </li>

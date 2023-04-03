@@ -93,6 +93,7 @@ body {
   font-weight: 400;
   font-style: italic;
   user-select: none;
+  scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -112,6 +113,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+.box-shadow {
+  box-shadow: 1px 1px 15px 10px #000;
 }
 
 @media (prefers-color-scheme: dark) {
