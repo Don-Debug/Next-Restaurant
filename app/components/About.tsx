@@ -10,7 +10,7 @@ export default function About() {
       <h1 className="text-[2.2rem] font-bold">Rreth lokalit</h1>
       <div
         className=" flex lg:flex-row flex-col xl:mx-[2rem] justify-around items-start gap-2 sm:py-[6rem] py-[4rem] mt-8
-      bg-blured sm:px-[4rem] px-[1.5rem] rounded-[4rem] box-shadow"
+      bg-blured sm:px-[4rem] px-[1.5rem] rounded-[2rem] box-shadow"
       >
         <div className=" sm:w-[80%] lg:w-[60rem] px-[1rem] md:py-[3rem] py-0 ">
           <h1 className=" sm:text-[2rem] md:text-[3rem] text-[1.8rem] font-bold">
@@ -31,7 +31,7 @@ export default function About() {
             alt="whine"
             width={1000}
             height={1000}
-            className=" w-fit h-[30rem] object-cover rounded-tr-[5rem] rounded-bl-[5rem] xl:pt-0 pt-12"
+            className=" w-fit h-[30rem] object-cover rounded-tr-[3rem] rounded-bl-[3rem] xl:pt-0 pt-12"
           />
         </div>
       </div>
