@@ -28,6 +28,9 @@ body {
   color: #fff;
   background-color: #151515;
 }
+.bg-body {
+  background-color: #151515;
+}
 .bg-blured {
   background-color: rgba(255, 255, 255, 0.575);
   backdrop-filter: blur(20px);

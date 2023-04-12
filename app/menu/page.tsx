@@ -25,19 +25,27 @@ export default function Menu() {
       <div className=" h-[10rem]">
         <Navbar />
       </div>
-      <div className=" flex items-start">
-        <div>
-          <button onClick={toggleFirstDiv}>
-            <h1>bar</h1>
-          </button>
-          <button onClick={toggleSecondDiv}>
-            <h1>Restaurant</h1>
-          </button>
+      <div className=" flex justify-start items-start px-[5rem]">
+        <div className=" w-[40%]">
+          <div className="flex justify-center items-center gap-[3rem] border-b-[2px] py-[2rem] border-white">
+            <button onClick={toggleFirstDiv}>
+              <h1 className=" px-[2rem] py-[1rem] bg-blured rounded-[1.5rem] box-shadow">
+                Bar Menu
+              </h1>
+            </button>
+            <button onClick={toggleSecondDiv}>
+              <h1 className=" px-[2rem] py-[1rem] bg-blured rounded-[1.5rem] box-shadow">
+                Restaurant Menu
+              </h1>
+            </button>
+          </div>
           {showFirstDiv && <Bar />}
           {showSecondDiv && <Restaurant />}
         </div>
-        <div>
-          <h1>Hello word</h1>
+        <div className="w-[40%] fixed right-[3rem]">
+          <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow">
+            Check Your bill
+          </h1>
         </div>
       </div>
     </div>

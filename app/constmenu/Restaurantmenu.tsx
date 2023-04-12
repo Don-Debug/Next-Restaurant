@@ -1,55 +1,108 @@
 const RestaurantMenu = [
   {
-    name: "Levrek",
-    price: "70L",
+    Name: "Peshku",
+    items: [
+      {
+        name: "Levrek",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+      {
+        name: "koce",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+      {
+        name: "Barbun",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+      {
+        name: "oktapod",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+      {
+        name: "sallate e ftohte",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+      {
+        name: "merluc",
+        price: "800L / 8€",
+        ingredients: "{peshk ne zgare}",
+      },
+    ],
   },
   {
-    name: "Koce",
-    price: "70L",
+    Name: "Piceria",
+    items: [
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+      {
+        name: "Margarita",
+        price: "500L / 5€",
+        ingredients: "{salc domatesh, mozarella}",
+      },
+    ],
   },
   {
-    name: "Barbun",
-    price: "70L",
-  },
-  {
-    name: "Margarita",
-    price: "70L",
-  },
-  {
-    name: "Spageti fruta deti",
-    price: "70L",
-  },
-  {
-    name: "Supe Peshku",
-    price: "70L",
-  },
-  {
-    name: "Proshute",
-    price: "70L",
-  },
-  {
-    name: "Tave Saganaq",
-    price: "70L",
-  },
-  {
-    name: "Tave Peshku",
-    price: "70L",
-  },
-  {
-    name: "Ngjala",
-    price: "70L",
-  },
-  {
-    name: "Patate te skuqura",
-    price: "70L",
-  },
-  {
-    name: "Xaxiq",
-    price: "70L",
-  },
-  {
-    name: "Sallate Greke",
-    price: "70L",
+    Name: "Kuzhina",
+    items: [
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+      {
+        name: "Spageti Fruta deti",
+        price: "800L / 8€",
+        ingredients: "{spagetti,domatina,fruta deti}",
+      },
+    ],
   },
 ];
 
