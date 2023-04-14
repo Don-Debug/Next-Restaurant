@@ -7,23 +7,23 @@ const barMenu = [
         price: "80L / 0.8€",
       },
       {
-        name: "koce",
+        name: "uje",
         price: "800L / 8€",
       },
       {
-        name: "Barbun",
+        name: "amita",
         price: "800L / 8€",
       },
       {
-        name: "oktapod",
+        name: "cola",
         price: "800L / 8€",
       },
       {
-        name: "sallate e ftohte",
+        name: "Fanta",
         price: "800L / 8€",
       },
       {
-        name: "merluc",
+        name: "Sprite",
         price: "800L / 8€",
       },
     ],
@@ -32,27 +32,27 @@ const barMenu = [
     Name: "Piceria",
     items: [
       {
-        name: "Margarita",
+        name: "ivi",
         price: "500L / 5€",
       },
       {
-        name: "Margarita",
+        name: "kapucino",
         price: "500L / 5€",
       },
       {
-        name: "Margarita",
+        name: "fredo exp",
         price: "500L / 5€",
       },
       {
-        name: "Margarita",
+        name: "fredo cap",
         price: "500L / 5€",
       },
       {
-        name: "Margarita",
+        name: "frape",
         price: "500L / 5€",
       },
       {
-        name: "Margarita",
+        name: "dopjo expres",
         price: "500L / 5€",
       },
     ],
@@ -61,27 +61,27 @@ const barMenu = [
     Name: "Kuzhina",
     items: [
       {
-        name: "Spageti Fruta deti",
+        name: "makiato",
         price: "800L / 8€",
       },
       {
-        name: "Spageti Fruta deti",
+        name: "uje vitamina",
         price: "800L / 8€",
       },
       {
-        name: "Spageti Fruta deti",
+        name: "uje me gaz",
         price: "800L / 8€",
       },
       {
-        name: "Spageti Fruta deti",
+        name: "peroni",
         price: "800L / 8€",
       },
       {
-        name: "Spageti Fruta deti",
+        name: "Heineken",
         price: "800L / 8€",
       },
       {
-        name: "Spageti Fruta deti",
+        name: "korca",
         price: "800L / 8€",
       },
     ],

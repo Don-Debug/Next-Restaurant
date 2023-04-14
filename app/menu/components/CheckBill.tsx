@@ -1,5 +1,14 @@
 import Link from "next/link";
-export default function CheckBill() {
+
+interface Props {
+  selectedItem: {
+    name: string;
+    price: string;
+  };
+}
+
+export default function CheckBill({ selectedItem }: Props) {
+  console.log(selectedItem);
   return (
     <div>
       <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow">
@@ -20,13 +29,14 @@ export default function CheckBill() {
             <p>Cmimi</p>
           </div>
           <div className="flex flex-col overflow-y-auto snap-y snap-mandatory vertical-sb gap-5 h-[15rem]">
+            {selectedItem.name}
             <div
               className="flex flex-row justify-between items-center
             px-8 py-1 mt-1"
             >
-              <p>Koce</p>
+              <p>{selectedItem.name}</p>
               <p>1</p>
-              <p>800L/8€</p>
+              <p>{selectedItem.price}</p>
             </div>
           </div>
           <div

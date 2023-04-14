@@ -43,7 +43,12 @@ export default function Menu() {
           {showSecondDiv && <Restaurant />}
         </div>
         <div className="w-[40%] fixed right-[3rem]">
-          <CheckBill />
+          <CheckBill
+            selectedItem={{
+              name: "",
+              price: "",
+            }}
+          />
         </div>
       </div>
     </div>
