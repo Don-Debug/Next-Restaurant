@@ -32,7 +32,7 @@ export default function Bar() {
               <div
                 key={item.name}
                 className="flex justify-between w-[100%] items-center border-[1px]
-                border-white px-8 py-4 rounded-[0.7rem] mt-[2rem] box-shadow"
+                border-white sm:px-8 px-4 py-4 rounded-[0.7rem] mt-[2rem] box-shadow"
                 onClick={() => handleClick(item)}
               >
                 <h1 className="text-[1.5rem]  font-bold">{item.name}</h1>
