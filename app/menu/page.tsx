@@ -1,11 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 import Bar from "./components/Bar";
 import Restaurant from "./components/Restaurant";
-import CheckBill from "./components/CheckBill";
 
 export default function Menu() {
   const [showFirstDiv, setShowFirstDiv] = useState(true);
@@ -26,7 +24,7 @@ export default function Menu() {
         <Navbar />
       </div>
       <div className=" flex justify-start items-start sm:px-[5rem] px-2">
-        <div className=" md:w-[50%] w-[95%] m-auto">
+        <div className=" md:w-[50%] w-[95%] m-auto sm:m-0">
           <div
             className="flex justify-center items-center sm:gap-[3rem] gap-6
            border-b-[2px] py-[2rem] border-white"
@@ -45,14 +43,6 @@ export default function Menu() {
           {showFirstDiv && <Bar />}
           {showSecondDiv && <Restaurant />}
         </div>
-        {/* <div className="w-[40%] fixed right-[3rem]">
-          <CheckBill
-            selectedItem={{
-              name: "",
-              price: "",
-            }}
-          />
-        </div> */}
       </div>
     </div>
   );

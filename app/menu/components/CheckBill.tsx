@@ -30,17 +30,15 @@ export default function CheckBill({ selectedItem }: Props) {
             <p>Cmimi</p>
           </div>
           <div className="flex flex-col overflow-y-auto snap-y snap-mandatory vertical-sb gap-5 h-[15rem]">
-            {selectedItems.map((item) => (
-              <div
-                key={item.name}
-                className="flex flex-row justify-between items-center
+            <div
+              key={selectedItem.name}
+              className="flex flex-row justify-between items-center
                 px-8 py-1 mt-1"
-              >
-                <p>{item.name}</p>
-                <p>1</p>
-                <p>{item.price}</p>
-              </div>
-            ))}
+            >
+              <p>{selectedItem.name}</p>
+              <p>1</p>
+              <p>{selectedItem.price}</p>
+            </div>
           </div>
           <div
             className="flex flex-row justify-between items-center

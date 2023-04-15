@@ -44,7 +44,9 @@ export default function Bar() {
           </div>
         </div>
       ))}
-      {selectedItem && <CheckBill selectedItem={selectedItem} />}
+      <div className="w-[40%] fixed top-[10rem] right-[3rem]">
+        {selectedItem && <CheckBill selectedItem={selectedItem} />}
+      </div>
     </div>
   );
 }
