@@ -25,16 +25,19 @@ export default function Menu() {
       <div className=" h-[10rem]">
         <Navbar />
       </div>
-      <div className=" flex justify-start items-start px-[5rem]">
-        <div className=" w-[50%]">
-          <div className="flex justify-center items-center gap-[3rem] border-b-[2px] py-[2rem] border-white">
+      <div className=" flex justify-start items-start sm:px-[5rem] px-2">
+        <div className=" w-[95%]">
+          <div
+            className="flex justify-center items-center sm:gap-[3rem] gap-4
+           border-b-[2px] py-[2rem] border-white"
+          >
             <button onClick={toggleFirstDiv}>
-              <h1 className=" px-[2rem] py-[1rem] bg-blured rounded-[1.5rem] box-shadow">
+              <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-blured sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
                 Bar Menu
               </h1>
             </button>
             <button onClick={toggleSecondDiv}>
-              <h1 className=" px-[2rem] py-[1rem] bg-blured rounded-[1.5rem] box-shadow">
+              <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-blured sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
                 Restaurant Menu
               </h1>
             </button>
@@ -42,14 +45,14 @@ export default function Menu() {
           {showFirstDiv && <Bar />}
           {showSecondDiv && <Restaurant />}
         </div>
-        <div className="w-[40%] fixed right-[3rem]">
+        {/* <div className="w-[40%] fixed right-[3rem]">
           <CheckBill
             selectedItem={{
               name: "",
               price: "",
             }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

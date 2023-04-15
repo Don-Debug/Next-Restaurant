@@ -9,6 +9,7 @@ interface Props {
 
 export default function CheckBill({ selectedItem }: Props) {
   console.log(selectedItem);
+  const selectedItems = [selectedItem];
   return (
     <div>
       <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow">
@@ -29,22 +30,24 @@ export default function CheckBill({ selectedItem }: Props) {
             <p>Cmimi</p>
           </div>
           <div className="flex flex-col overflow-y-auto snap-y snap-mandatory vertical-sb gap-5 h-[15rem]">
-            {selectedItem.name}
-            <div
-              className="flex flex-row justify-between items-center
-            px-8 py-1 mt-1"
-            >
-              <p>{selectedItem.name}</p>
-              <p>1</p>
-              <p>{selectedItem.price}</p>
-            </div>
+            {selectedItems.map((item) => (
+              <div
+                key={item.name}
+                className="flex flex-row justify-between items-center
+                px-8 py-1 mt-1"
+              >
+                <p>{item.name}</p>
+                <p>1</p>
+                <p>{item.price}</p>
+              </div>
+            ))}
           </div>
           <div
             className="flex flex-row justify-between items-center
            px-8 py-3 border-t-[2px] border-white mt-4"
           >
             <p className="font-bold text-[1.5rem]">Total</p>
-            <p className="font-bold text-[1.1rem]">800L/8€</p>
+            <p className="font-bold text-[1.1rem]">{selectedItem.price}</p>
           </div>
 
           <p className=" text-center py-8">
