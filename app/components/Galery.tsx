@@ -32,7 +32,7 @@ export default function Galery() {
     <div id="galeri" className="py-[4rem]">
       <div className="galery-bg my-[5rem] flex flex-col justify-center items-center w-full h-auto ">
         <h1 className="text-[2rem] font-bold text-center my-[3rem]">Gallery</h1>
-        <div className="flex flex-row flex-wrap justify-center items-start lg:px-[5rem] md:px-[2rem] px-[1rem] py-[3rem] md:gap-10 sm:gap-4 gap-2">
+        <div className="flex flex-row flex-wrap justify-center items-start lg:px-[5rem] md:px-[2rem] px-[1rem] py-[3rem] md:gap-10 gap-4">
           {galery.slice(0, numDisplayed).map((post, index) => (
             <div
               key={index}
@@ -54,7 +54,7 @@ export default function Galery() {
         </div>
         {!isExpanded && numDisplayed < galery.length && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-blured box-shadow"
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[1.4rem] bg-blured box-shadow"
             onClick={handleShowMore}
           >
             Show More
@@ -62,7 +62,7 @@ export default function Galery() {
         )}
         {isExpanded && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-blured box-shadow"
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[1.4rem] bg-blured box-shadow"
             onClick={handleShowLess}
           >
             Show Less
