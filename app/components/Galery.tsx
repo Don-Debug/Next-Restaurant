@@ -29,10 +29,10 @@ export default function Galery() {
   };
 
   return (
-    <div id="galeri" className="py-[4rem]">
+    <div id="gallery" className="py-[4rem]">
       <div className="galery-bg my-[5rem] flex flex-col justify-center items-center w-full h-auto ">
         <h1 className="text-[2rem] font-bold text-center my-[3rem]">Gallery</h1>
-        <div className="flex flex-row flex-wrap justify-center items-start lg:px-[5rem] md:px-[2rem] px-[1rem] py-[3rem] md:gap-10 gap-4">
+        <div className="flex flex-row flex-wrap justify-center items-start lg:px-[5rem] md:px-[2rem] px-[1rem] py-[3rem] md:gap-10 gap-6">
           {galery.slice(0, numDisplayed).map((post, index) => (
             <div
               key={index}

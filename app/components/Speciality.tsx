@@ -17,7 +17,7 @@ export default function Speciality() {
               alt="image"
               width={1000}
               height={1000}
-              className="w-[15rem] h-[15rem] object-cover rounded-[1rem]"
+              className="w-[15rem] h-[15rem] object-cover rounded-[1rem] pointer-events-none"
             />
             <h3 className="text-[1.6rem] font-bold p-4">Tave ngjale</h3>
           </div>
@@ -39,7 +39,7 @@ export default function Speciality() {
               alt="image"
               width={1000}
               height={1000}
-              className="w-[15rem] h-[15rem] object-cover rounded-[1rem]"
+              className="w-[15rem] h-[15rem] object-cover rounded-[1rem] pointer-events-none"
             />
             <h3 className="text-[1.6rem] font-bold p-4">Tave ngjale</h3>
           </div>

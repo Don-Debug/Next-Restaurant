@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div
       className=" flex justify-between items-center md:px-14 px-5 md:py-5 py-2
-     bg-blured rounded-[1.5rem] fixed z-40 w-[97%] lg:top-[1rem] top-[0.3rem] md:left-4 sm:left-2 left-1 right-4"
+      fixed z-40 w-[100%] top-0 left-0 bg-blured"
     >
       <div className=" flex justify-center items-center gap-2 ">
         <Image
@@ -18,100 +18,91 @@ export default function Navbar() {
           alt="logo"
           width={1000}
           height={1000}
-          className=" rounded-full w-[50px] h-[50px]"
+          className=" rounded-full w-[50px] h-[50px] pointer-events-none"
         />
-        <h2 className=" sm:text-[1.6rem] text-[1.3rem] font-bold">Teo-Narte</h2>
+        <h2 className=" sm:text-[1.6rem] text-[1.3rem] font-bold text-white">
+          Teo-Narte
+        </h2>
       </div>
-      <div>
-        <ul className="justify-center items-center gap-9  sm:flex hidden">
-          <li>
+      <div></div>
+      <div className="flex z-30">
+        {toggle ? (
+          <CgClose
+            className=" text-[40px] font-bold cursor-pointer text-white"
+            onClick={() => setToggle(!toggle)}
+          />
+        ) : (
+          <CgMenuRight
+            className=" text-[40px] font-bold cursor-pointer text-white"
+            onClick={() => setToggle(!toggle)}
+          />
+        )}
+
+        <div
+          className={`${
+            !toggle ? " hidden" : " flex"
+          } py-6 px-6 absolute md:top-24 top-[4.5rem] right-0 md:w-[40%] w-[60%] z-10
+          bg-small-menu flex items-start justify-start h-screen`}
+        >
+          <div className=" list-none flex text-center flex-col gap-2 w-full px-2 py-1">
             <Link
               href={`/`}
-              className="text-[1.2rem] "
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
+                setToggle(!toggle);
                 window.scrollTo(0, 0);
               }}
             >
               Home
             </Link>
-          </li>
-          <li>
-            <Link href={`/#about`} className="text-[1.2rem]">
+
+            <Link
+              href={`/#about`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
               About
             </Link>
-          </li>
-          <li>
-            <Link href={`/#location`} className="text-[1.2rem]">
+
+            <Link
+              href={`/#location`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
               Location
             </Link>
-          </li>
-        </ul>
-        <div className=" sm:hidden flex">
-          {toggle ? (
-            <CgClose
-              className=" text-[40px] font-bold cursor-pointer text-white"
-              onClick={() => setToggle(!toggle)}
-            />
-          ) : (
-            <CgMenuRight
-              className=" text-[40px] font-bold cursor-pointer text-white"
-              onClick={() => setToggle(!toggle)}
-            />
-          )}
 
-          <div
-            className={`${
-              !toggle ? " hidden" : " flex"
-            } py-6 px-6 absolute top-24 right-3 w-[70%] z-10 
-            rounded-xl bg-small-menu flex items-center justify-center`}
-          >
-            <ul className=" list-none flex justify-center items-center text-center flex-col gap-6 w-full px-2 py-1">
-              <li>
-                <Link
-                  href={`/`}
-                  className="text-[1.2rem] text-slate-600"
-                  onClick={() => {
-                    setToggle(!toggle);
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/#about`}
-                  className="text-[1.2rem] text-slate-600"
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/#location`}
-                  className="text-[1.2rem] text-slate-600"
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
-                >
-                  Location
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/menu`}
-                  className="text-[1.2rem] text-slate-600"
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
-                >
-                  Menu
-                </Link>
-              </li>
-            </ul>
+            <Link
+              href={`/menu`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
+              Menu
+            </Link>
+            <Link
+              href={`/#gallery`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
+              Gallery
+            </Link>
+            <Link
+              href={`/#testimonials`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
+              Testimonials
+            </Link>
           </div>
         </div>
       </div>

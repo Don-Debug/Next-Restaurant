@@ -31,7 +31,7 @@ export default function About() {
             alt="whine"
             width={1000}
             height={1000}
-            className=" w-fit h-[30rem] object-cover rounded-tr-[3rem] rounded-bl-[3rem] xl:pt-0 pt-12"
+            className=" w-fit h-[30rem] object-cover rounded-tr-[3rem] rounded-bl-[3rem] xl:pt-0 pt-12 pointer-events-none"
           />
         </div>
       </div>

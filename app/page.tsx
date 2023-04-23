@@ -5,6 +5,7 @@ import Location from "./components/Location";
 import Speciality from "./components/Speciality";
 import Navbar from "./components/Navbar";
 import Galery from "./components/Galery";
+import Feedbacks from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Speciality />
       <Galery />
       <Location />
+      <Feedbacks />
       <Footer />
     </div>
   );
