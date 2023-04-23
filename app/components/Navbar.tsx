@@ -61,7 +61,6 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
-                window.scrollTo(0, 900);
               }}
             >
               About
@@ -81,7 +80,6 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
-                window.scrollTo(0, 2900);
               }}
             >
               Gallery
@@ -91,7 +89,6 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
-                window.scrollTo(0, 4300);
               }}
             >
               Location
@@ -101,7 +98,6 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
-                window.scrollTo(0, 5300);
               }}
             >
               Testimonials
