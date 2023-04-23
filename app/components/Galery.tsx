@@ -36,7 +36,7 @@ export default function Galery() {
           {galery.slice(0, numDisplayed).map((post, index) => (
             <div
               key={index}
-              className="flex justify-center relative my-shadow md:w-[20rem] sm:w-[15rem] w-[10rem] h-auto overflow-hidden"
+              className="flex justify-center relative box-shadow md:w-[20rem] sm:w-[15rem] w-[10rem] h-auto overflow-hidden"
             >
               <Image
                 src={post.image}
