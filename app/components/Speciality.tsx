@@ -9,7 +9,7 @@ export default function Speciality() {
       <div className="flex justify-around items-center md:flex-row flex-col gap-[1.5rem] mt-[8rem]">
         <div
           className="lg:flex-row sm:flex md:flex-col gap-5 sm:items-start md:items-center lg:items-start items-center
-         bg-blured px-[2rem] py-[2rem] rounded-[1.3rem] box-shadow"
+         bg-blured px-[2rem] py-[2rem] rounded-[0.8rem] box-shadow"
         >
           <div>
             <Image
@@ -31,7 +31,7 @@ export default function Speciality() {
         </div>
         <div
           className="lg:flex-row sm:flex md:flex-col gap-5 sm:items-start md:items-center
-         lg:items-start items-center bg-blured px-[2rem] py-[2rem] rounded-[1.3rem] box-shadow"
+         lg:items-start items-center bg-blured px-[2rem] py-[2rem] rounded-[0.8rem] box-shadow"
         >
           <div>
             <Image

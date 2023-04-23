@@ -40,8 +40,8 @@ export default function Navbar() {
 
         <div
           className={`${
-            !toggle ? " hidden" : " flex"
-          } py-6 px-6 absolute md:top-24 top-[4.5rem] right-0 md:w-[40%] w-[60%] z-10
+            !toggle ? " hide" : " show"
+          } py-6 px-6 absolute md:top-[5.6rem] top-[4.2rem] right-0 md:w-[40%] w-[60%] z-10
           bg-small-menu flex items-start justify-start h-screen`}
         >
           <div className=" list-none flex text-center flex-col gap-2 w-full px-2 py-1">
@@ -61,19 +61,10 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
+                window.scrollTo(0, 900);
               }}
             >
               About
-            </Link>
-
-            <Link
-              href={`/#location`}
-              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
-              onClick={() => {
-                setToggle(!toggle);
-              }}
-            >
-              Location
             </Link>
 
             <Link
@@ -90,15 +81,27 @@ export default function Navbar() {
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
+                window.scrollTo(0, 2900);
               }}
             >
               Gallery
+            </Link>
+            <Link
+              href={`/#location`}
+              className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
+              onClick={() => {
+                setToggle(!toggle);
+                window.scrollTo(0, 4300);
+              }}
+            >
+              Location
             </Link>
             <Link
               href={`/#testimonials`}
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
+                window.scrollTo(0, 5300);
               }}
             >
               Testimonials

@@ -10,7 +10,7 @@ export default function Restaurant() {
           key={index}
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
         >
-          <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow mt-[5rem]">
+          <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow mt-[5rem] uppercase">
             {category.Name}
           </h1>
           <div className="w-[100%]">
@@ -21,7 +21,9 @@ export default function Restaurant() {
                  border-white sm:px-8 px-4 py-4 rounded-[0.7rem] mt-[2rem] box-shadow"
               >
                 <div>
-                  <h1 className="text-[1.5rem]  font-bold">{item.name}</h1>
+                  <h1 className="text-[1.5rem] font-bold uppercase">
+                    {item.name}
+                  </h1>
                   <p>{item.ingredients}</p>
                 </div>
                 <p className=" underline font-bold text-[1.2rem]">

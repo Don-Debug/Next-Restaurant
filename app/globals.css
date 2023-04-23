@@ -58,7 +58,9 @@ a {
 .box-shadow {
   box-shadow: 1px 1px 15px 10px #000;
 }
-
+.my-shadow {
+  box-shadow: 1px 1px 10px 7px rgba(0, 0, 0, 0.589);
+}
 .vertical-sb::-webkit-scrollbar {
   width: 5px;
 }
@@ -70,6 +72,14 @@ a {
 .vertical-sb::-webkit-scrollbar-thumb {
   background-color: #fefefe;
   border-radius: 5px;
+}
+.hide {
+  transform: translateX(50rem);
+  transition: all 0.3s ease-in-out;
+}
+.show {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
 @media (prefers-color-scheme: dark) {

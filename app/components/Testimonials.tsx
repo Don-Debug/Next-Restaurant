@@ -21,10 +21,10 @@ const Feedbacks = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10 w-[90%] mx-auto flex overflow-x-auto snap-x snap-mandatory vertical-sb gap-5 py-8">
+      <div className="mt-10 w-[90%] mx-auto flex overflow-x-auto snap-x snap-mandatory vertical-sb gap-3 py-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex-shrink-0 snap-center">
-            <div className="bg-blured p-5 rounded-3xl xs:w-[320px] w-full max-w-[320px]">
+            <div className="bg-blured p-5 rounded-[0.8rem] xs:w-[320px] w-full max-w-[320px]">
               <p className="text-white font-black text-[48px]">&quot;</p>
 
               <div className="mt-1">

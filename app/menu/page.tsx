@@ -24,7 +24,7 @@ export default function Menu() {
         <Navbar />
       </div>
       <div className=" flex justify-start items-start sm:px-[5rem] px-2">
-        <div className=" md:w-[50%] w-[95%] m-auto sm:m-0">
+        <div className=" md:w-[60%] w-[95%] m-auto sm:m-0">
           <div
             className="flex justify-center items-center sm:gap-[3rem] gap-6
            border-b-[2px] py-[2rem] border-white"
