@@ -25,7 +25,7 @@ const Feedbacks = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex-shrink-0 snap-center">
             <div className="bg-blured p-5 rounded-3xl xs:w-[320px] w-full max-w-[320px]">
-              <p className="text-white font-black text-[48px]">"</p>
+              <p className="text-white font-black text-[48px]">&quot;</p>
 
               <div className="mt-1">
                 <p className="text-white tracking-wider text-[18px] whitespace-normal">
