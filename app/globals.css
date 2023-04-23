@@ -75,7 +75,7 @@ a {
     url(../public/restaurant-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  animation: cool-bg 14s linear infinite;
+  animation: cool-bg 15s linear infinite;
 }
 
 @keyframes cool-bg {

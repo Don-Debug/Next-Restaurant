@@ -36,12 +36,12 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href={`#about`} className="text-[1.2rem]">
+            <Link href={`/#about`} className="text-[1.2rem]">
               About
             </Link>
           </li>
           <li>
-            <Link href={`#location`} className="text-[1.2rem]">
+            <Link href={`/#location`} className="text-[1.2rem]">
               Location
             </Link>
           </li>
@@ -80,7 +80,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href={`#about`}
+                  href={`/#about`}
                   className="text-[1.2rem] text-slate-600"
                   onClick={() => {
                     setToggle(!toggle);
@@ -91,7 +91,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href={`#location`}
+                  href={`/#location`}
                   className="text-[1.2rem] text-slate-600"
                   onClick={() => {
                     setToggle(!toggle);
