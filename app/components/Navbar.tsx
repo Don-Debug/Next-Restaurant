@@ -5,6 +5,7 @@ import { CgMenuRight, CgClose } from "react-icons/cg";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
+
   return (
     <div
       className=" flex justify-between items-center md:px-14 px-5 md:py-5 py-2
@@ -48,7 +49,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href={`/#about`}
+              href={`#about`}
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
@@ -67,7 +68,7 @@ export default function Navbar() {
               Menu
             </Link>
             <Link
-              href={`/#gallery`}
+              href={`#gallery`}
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
@@ -76,7 +77,7 @@ export default function Navbar() {
               Gallery
             </Link>
             <Link
-              href={`/#location`}
+              href={`#location`}
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
@@ -85,7 +86,7 @@ export default function Navbar() {
               Location
             </Link>
             <Link
-              href={`/#testimonials`}
+              href={`#testimonials`}
               className="text-[1.2rem] text-slate-600 hover:bg-zinc-300 w-full py-2"
               onClick={() => {
                 setToggle(!toggle);
