@@ -32,7 +32,7 @@ export default function Navbar() {
         <div
           className={`${
             !toggle ? " hide" : " show"
-          } py-6 px-6 absolute md:top-[5.3rem] top-[3.8rem] right-0 md:w-[40%] w-[60%] z-10
+          } py-6 px-6 absolute md:top-[5.3rem] top-[3.6rem] right-0 md:w-[40%] w-[60%] z-10
           bg-small-menu flex items-start justify-start h-screen`}
         >
           <div className=" list-none flex text-center flex-col gap-2 w-full px-2 py-1">

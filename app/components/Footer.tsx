@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className="px-[5rem] py-[4rem] flex flex-wrap md:flex-nowrap gap-[4rem] justify-between items-center bg-blured box-shadow">
       <div className="flex flex-col gap-[2rem] justify-center items-start px-4">
-        <h2 className="text-[1.6rem] font-bold text-center">Contact Us</h2>
+        <h1 className="text-[1.6rem] font-bold text-center">Contact Us</h1>
         <Link
           href={`https://www.facebook.com/teo.narte.7`}
           target="blank"
