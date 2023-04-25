@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/restaurant-1.jpg";
+import logo from "@/public/logo2.png";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 
 export default function Navbar() {
@@ -13,14 +13,7 @@ export default function Navbar() {
       fixed z-40 w-[100%] top-0 left-0 bg-blured"
     >
       <div className=" flex justify-center items-center gap-2 ">
-        <Image
-          src={logo}
-          alt="logo"
-          width={1000}
-          height={1000}
-          className=" rounded-full w-[50px] h-[50px] pointer-events-none"
-        />
-        <h2 className=" sm:text-[1.6rem] text-[1.3rem] font-bold text-white">
+        <h2 className=" sm:text-[1.8rem] text-[1.3rem] font-bold text-white">
           Teo-Narte
         </h2>
       </div>
@@ -41,7 +34,7 @@ export default function Navbar() {
         <div
           className={`${
             !toggle ? " hide" : " show"
-          } py-6 px-6 absolute md:top-[5.6rem] top-[4.2rem] right-0 md:w-[40%] w-[60%] z-10
+          } py-6 px-6 absolute md:top-[5.3rem] top-[3.8rem] right-0 md:w-[40%] w-[60%] z-10
           bg-small-menu flex items-start justify-start h-screen`}
         >
           <div className=" list-none flex text-center flex-col gap-2 w-full px-2 py-1">
