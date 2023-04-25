@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/public/logo2.png";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 
 export default function Navbar() {
