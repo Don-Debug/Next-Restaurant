@@ -1,35 +1,27 @@
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Vend i mire per dreke dhe plazh me familjen ose miqte! Peshku eshte i fresket dhe ushqimi i mire. Nese kerkoni lluks apo perfeksion atehere nuk ben per ju, eshte vend familjare dhe per njerez normal...",
+    name: "Me & I",
+    stars: "5",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris B!tch",
-    designation: "COW",
-    company: "Fredi",
-    image: "https://randomuser.me/api/portraits/men/6.jpg",
+      "Nje nga tavernat me te mira ne shqiperi, cdo gje gatuhet ne furra druri dhe perberesit jane te gjithe te fresket dhe vendas, pronari duhet te pergatise te dhenat e tij bankare qe te paguajme edhe me karte.",
+    name: "Αλεξανδρος Κονομης",
+    stars: "5",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Vend i mrekullueshëm për ushqim dhe plazh. Njerëzit këtu janë shumë miqësorë.",
+    name: "aleks icedemon",
+    stars: "5",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Vend i mrekullueshëm për të shijuar drekën me familjen dhe miqtë. Ata përdorin përbërës të thjeshtë por të freskët për të bërë gatime tradicionale të shijshme...",
+    name: "Ed M C",
+    stars: "4",
   },
 ];
 

@@ -16,7 +16,6 @@ export default function Navbar() {
           Teo-Narte
         </h2>
       </div>
-      <div></div>
       <div className="flex z-30">
         {toggle ? (
           <CgClose

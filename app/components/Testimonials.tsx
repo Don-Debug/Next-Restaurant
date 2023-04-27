@@ -1,5 +1,6 @@
 import testimonials from "@/constants/testimonials";
 import Link from "next/link";
+import { AiFillStar } from "react-icons/ai";
 
 const Feedbacks = () => {
   return (
@@ -9,7 +10,7 @@ const Feedbacks = () => {
           Testimonials.
         </h1>
         <p className="text-center">
-          Give Us a Feedback in{" "}
+          Leave us your comment here{" "}
           <Link
             href={`https://www.google.com/search?q=teo+narte&oq=teo+narte&aqs=chrome..69i57j69i60l3.8305j0j7&sourceid=chrome&ie=UTF-8#lrd=0x134531c7fa62f781:0xb03eaebbcf9603c0,3,,,,`}
             className="text-blue-300"
@@ -23,7 +24,10 @@ const Feedbacks = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex-shrink-0 snap-center">
             <div className="bg-blured p-5 rounded-[0.8rem] xs:w-[320px] w-full max-w-[320px]">
-              <p className="text-white font-black text-[48px]">&quot;</p>
+              <p className="text-white font-bold text-[1.9rem] flex items-center">
+                <AiFillStar color="#fbff37" />
+                {testimonial.stars}
+              </p>
 
               <div className="mt-1">
                 <p className="text-white tracking-wider text-[18px] whitespace-normal">
@@ -31,7 +35,7 @@ const Feedbacks = () => {
                 </p>
 
                 <div className="mt-7 flex justify-between items-center gap-1">
-                  <p className=" text-white font-medium text-[1.3rem] underline">
+                  <p className="text-blue-800 font-medium text-[1.3rem]">
                     <span className="text-blue-800">#</span> {testimonial.name}
                   </p>
                 </div>
