@@ -47,7 +47,9 @@ export default function Home() {
     if (!hasPopupBeenShown) {
       setTimeout(() => {
         setIsLoading(false);
-        setIsPopupVisible(true);
+        setTimeout(() => {
+          setIsPopupVisible(true);
+        }, 1000);
         sessionStorage.setItem("hasPopupBeenShown", "true");
       }, 2000);
     } else {
