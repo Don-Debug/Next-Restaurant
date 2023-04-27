@@ -1,10 +1,26 @@
-import Link from "next/link";
 import RestaurantMenu from "../../constmenu/Restaurantmenu";
+import { useState } from "react";
 
 export default function Restaurant() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredMenu = RestaurantMenu.filter((category) =>
+    category.items.some((item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  );
   return (
-    <div className="flex flex-col gap-[2rem] w-[100%] mt-[2rem] pb-[5rem]">
-      {RestaurantMenu.map((category, index) => (
+    <div className="flex flex-col gap-[2rem] w-[100%] mt-[1rem] pb-[5rem]">
+      <input
+        type="text"
+        placeholder="Search menu items"
+        autoComplete="none"
+        value={searchQuery}
+        autoCorrect="none"
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="px-3 py-3 rounded-lg shadow-sm focus:outline-none block w-full sm:text-sm menu-shadow border border-[#1f1f1f]"
+      />
+      {filteredMenu.map((category, index) => (
         <div
           key={index}
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
@@ -15,7 +31,7 @@ export default function Restaurant() {
           >
             {category.Name}
           </h1>
-          <div className="w-[100%] flex flex-wrap gap-8 justify-center items-center">
+          <div className="w-[100%] flex flex-wrap gap-4 justify-center items-center">
             {category.items.map((item, index) => (
               <div
                 key={index}

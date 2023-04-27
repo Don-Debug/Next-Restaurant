@@ -1,10 +1,27 @@
-import Link from "next/link";
 import barMenu from "../../constmenu/Barmenu";
+import React, { useState } from "react";
 
 export default function Bar() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredMenu = barMenu.filter((category) =>
+    category.items.some((item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  );
+
   return (
-    <div className="flex flex-col gap-[2rem] w-[100%] mt-[2rem] pb-[5rem]">
-      {barMenu.map((category, index) => (
+    <div className="flex flex-col gap-[2rem] w-[100%] mt-[1rem] pb-[5rem]">
+      <input
+        type="text"
+        placeholder="Search menu items"
+        autoComplete="none"
+        value={searchQuery}
+        autoCorrect="none"
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="px-3 py-3 rounded-lg shadow-sm focus:outline-none block w-full sm:text-sm menu-shadow border border-[#1f1f1f]"
+      />
+      {filteredMenu.map((category, index) => (
         <div
           key={index}
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
@@ -15,7 +32,7 @@ export default function Bar() {
           >
             {category.Name}
           </h1>
-          <div className="w-[100%] flex flex-wrap gap-8 justify-center items-center">
+          <div className="w-[100%] flex flex-wrap gap-4 justify-center items-center">
             {category.items.map((item, index) => (
               <div
                 key={index}
