@@ -54,7 +54,7 @@ export default function Galery() {
         </div>
         {!isExpanded && numDisplayed < galery.length && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[0.8rem] bg-blured box-shadow"
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#2F2F2F] box-shadow border-x-[3px] border-white "
             onClick={handleShowMore}
           >
             Show More
@@ -62,7 +62,7 @@ export default function Galery() {
         )}
         {isExpanded && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[0.8rem] bg-blured box-shadow"
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#2F2F2F] box-shadow border-x-[3px] border-white "
             onClick={handleShowLess}
           >
             Show Less

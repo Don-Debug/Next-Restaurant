@@ -8,47 +8,47 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="px-[5rem] py-[4rem] flex flex-wrap md:flex-nowrap gap-[4rem] justify-between items-center bg-blured box-shadow">
+    <div className="px-[5rem] py-[4rem] flex flex-wrap md:flex-nowrap gap-[4rem] justify-between items-center bg-[#2F2F2F] box-shadow">
       <div className="flex flex-col gap-[2rem] justify-center items-start px-4">
         <h1 className="text-[1.6rem] font-bold text-center">Contact Us</h1>
         <Link
           href={`https://www.facebook.com/teo.narte.7`}
           target="blank"
-          className="flex gap-5 items-center font-bold text-[1.2rem] underline"
+          className="flex gap-5 items-center font-bold text-[1.2rem]"
         >
           <Image
             src={fb}
             alt="link"
             width={1000}
             height={1000}
-            className="w-[3rem] h-[3rem] object-cover bg-blured rounded-[.7rem] p-[2px] pointer-events-none"
+            className="w-[3rem] h-[3rem] object-cover bg-white rounded-[.7rem] p-[2px] pointer-events-none"
           />
-          Facebook
+          Teo Narte
         </Link>
         <Link
           href={`https://www.instagram.com/teo_narte/`}
           target="blank"
-          className="flex gap-5 items-center font-bold text-[1.2rem] underline"
+          className="flex gap-5 items-center font-bold text-[1.2rem]"
         >
           <Image
             src={ig}
             alt="link"
             width={1000}
             height={1000}
-            className="w-[3rem] h-[3rem] object-cover bg-blured rounded-[.7rem] p-[2px] pointer-events-none"
+            className="w-[3rem] h-[3rem] object-cover bg-white rounded-[.7rem] p-[2px] pointer-events-none"
           />
-          Instagram
+          teo_narte
         </Link>
         <Link
           href={`tel:+355629019222`}
-          className="flex gap-5 items-center font-bold text-[1.2rem] underline"
+          className="flex gap-5 items-center font-bold text-[1.2rem]"
         >
           <Image
             src={phone}
             alt="link"
             width={1000}
             height={1000}
-            className="w-[3rem] h-[3rem] object-cover bg-blured rounded-[.7rem] p-[2px] pointer-events-none"
+            className="w-[3rem] h-[3rem] object-cover bg-white rounded-[.7rem] p-[2px] pointer-events-none"
           />
           +355629019222
         </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
           <Link
             href={`https://github.com/Don-Debug`}
             target="blank"
-            className=" text-black"
+            className="text-blue-400"
           >
             Debug
           </Link>

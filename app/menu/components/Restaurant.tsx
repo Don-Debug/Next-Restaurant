@@ -10,7 +10,7 @@ export default function Restaurant() {
           key={index}
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
         >
-          <h1 className="bg-blured px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow mt-[5rem] uppercase">
+          <h1 className="bg-[#2F2F2F] px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem] rounded-[1.5rem] box-shadow mt-[5rem] uppercase">
             {category.Name}
           </h1>
           <div className="w-[100%]">

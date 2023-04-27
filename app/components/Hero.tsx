@@ -6,8 +6,13 @@ export default function Hero() {
     <div className=" bg-hero-cool h-screen box-shadow">
       <div className=" py-8 px-8 relative"></div>
       <div className=" w-full">
-        <p className=" absolute top-[10rem] right-[5rem] px-6 py-2 rounded-[2rem] bg-blured  sm:flex hidden ">
-          <Link href={`/menu`}>Menu</Link>
+        <p>
+          <Link
+            href={`/menu`}
+            className=" absolute top-[10rem] right-[5rem] px-6 py-2 rounded-[2rem] bg-[#2F2F2F]  sm:flex hidden border-x-[3px] border-white "
+          >
+            Menu
+          </Link>
         </p>
 
         <h3

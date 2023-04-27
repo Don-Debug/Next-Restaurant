@@ -50,12 +50,12 @@ export default function Menu() {
            border-b-[2px] py-[2rem] border-white"
               >
                 <button onClick={toggleFirstDiv}>
-                  <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-blured sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
+                  <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-[#2F2F2F] sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
                     Bar Menu
                   </h1>
                 </button>
                 <button onClick={toggleSecondDiv}>
-                  <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-blured sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
+                  <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-[#2F2F2F] sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
                     Restaurant Menu
                   </h1>
                 </button>

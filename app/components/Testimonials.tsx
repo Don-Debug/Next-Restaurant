@@ -23,20 +23,20 @@ const Feedbacks = () => {
       <div className="mt-10 w-[90%] mx-auto flex overflow-x-auto snap-x snap-mandatory vertical-sb gap-3 py-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex-shrink-0 snap-center">
-            <div className="bg-blured p-5 rounded-[0.8rem] xs:w-[320px] w-full max-w-[320px]">
+            <div className="bg-[#2F2F2F] p-5 rounded-[0.8rem] xs:w-[320px] w-full max-w-[320px]">
               <p className="text-white font-bold text-[1.9rem] flex items-center">
                 <AiFillStar color="#fbff37" />
                 {testimonial.stars}
               </p>
 
               <div className="mt-1">
-                <p className="text-white tracking-wider text-[18px] whitespace-normal">
+                <p className="text-white text-[1.1rem] whitespace-normal font-thin">
                   {testimonial.testimonial}
                 </p>
 
                 <div className="mt-7 flex justify-between items-center gap-1">
-                  <p className="text-blue-800 font-medium text-[1.3rem]">
-                    <span className="text-blue-800">#</span> {testimonial.name}
+                  <p className="text-blue-400 font-light text-[1.1rem]">
+                    <span className="">#</span> {testimonial.name}
                   </p>
                 </div>
               </div>
