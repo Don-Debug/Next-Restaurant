@@ -43,7 +43,11 @@ a {
   box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.5);
 }
 .my-shadow {
-  box-shadow: 1px 1px 10px 7px rgba(0, 0, 0, 0.589);
+  box-shadow: 1px 1px 10px 7px rgba(0, 0, 0, 0.397);
+}
+
+.menu-shadow {
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.363);
 }
 .vertical-sb::-webkit-scrollbar {
   width: 5px;

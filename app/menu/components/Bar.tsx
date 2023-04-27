@@ -10,24 +10,22 @@ export default function Bar() {
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
         >
           <h1
-            className="bg-[#2F2F2F] px-[1rem] py-[1rem] w-[100%] text-center text-[1.5rem]
-           rounded-[1.5rem] box-shadow mt-[5rem] uppercase"
+            className="bg-[#2F2F2F] px-[1rem] py-[1rem] md:w-[50%] w-[90%] text-center text-[1.5rem]
+           rounded-[1.5rem] box-shadow mt-[5rem] uppercase mx-auto"
           >
             {category.Name}
           </h1>
-          <div className="w-[100%]">
-            {category.items.map((item) => (
+          <div className="w-[100%] flex flex-wrap gap-8 justify-center items-center">
+            {category.items.map((item, index) => (
               <div
-                key={item.name}
-                className="flex justify-between w-[100%] items-center border-[1px]
-                border-white sm:px-8 px-4 py-4 rounded-[0.7rem] mt-[2rem] box-shadow"
+                key={index}
+                className="flex flex-col justify-start w-fit items-center gap-4
+                 sm:px-8 px-4 py-4 rounded-[0.7rem] mt-[2rem] menu-shadow border border-[#1f1f1f]"
               >
-                <h1 className="text-[1.5rem]  font-bold uppercase">
+                <h1 className="text-[1.5rem] font-bold uppercase">
                   {item.name}
                 </h1>
-                <p className=" underline font-bold text-[1.2rem]">
-                  {item.price}
-                </p>
+                <p className="font-bold text-[1.2rem]">{item.price}</p>
               </div>
             ))}
           </div>
