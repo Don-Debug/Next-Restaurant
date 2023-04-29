@@ -40,7 +40,7 @@ export default function Footer() {
           teo_narte
         </Link>
         <Link
-          href={`tel:+355629019222`}
+          href={`tel:+355672957798`}
           className="flex gap-5 items-center font-bold text-[1.2rem]"
         >
           <Image
@@ -50,7 +50,7 @@ export default function Footer() {
             height={1000}
             className="w-[3rem] h-[3rem] object-cover bg-white rounded-[.7rem] p-[2px] pointer-events-none"
           />
-          +355629019222
+          +355672957798
         </Link>
       </div>
       <div className=" flex flex-col justify-end items-center gap-8">
@@ -61,7 +61,8 @@ export default function Footer() {
 
         <p className=" pt-[4rem] text-center font-medium text-[1.1rem] text-slate-200">
           &copy; Copyrights {currentYear} Teo Narte. All rights reserved.
-          <br /> Made with love by{" "}
+          <br />
+          Designed and Developed by{" "}
           <Link
             href={`https://github.com/Don-Debug`}
             target="blank"
