@@ -4,10 +4,12 @@ import React, { useState } from "react";
 export default function Bar() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredMenu = barMenu.filter((category) =>
-    category.items.some((item) =>
-      item.name.toLowerCase().includes(searchQuery.toLowerCase())
-    )
+  const filteredMenu = barMenu.filter(
+    (category) =>
+      category.Name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      category.items.some((item) =>
+        item.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
   );
 
   return (
@@ -33,18 +35,22 @@ export default function Bar() {
             {category.Name}
           </h1>
           <div className="w-[100%] flex flex-wrap gap-4 justify-center items-center">
-            {category.items.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-start w-fit items-center gap-4
-                 sm:px-8 px-4 py-4 rounded-[0.7rem] mt-[2rem] menu-shadow border border-[#1f1f1f]"
-              >
-                <h1 className="text-[1.5rem] font-bold uppercase">
-                  {item.name}
-                </h1>
-                <p className="font-bold text-[1.2rem]">{item.price}</p>
-              </div>
-            ))}
+            {category.items
+              .filter((item) =>
+                item.name.toLowerCase().includes(searchQuery.toLowerCase())
+              )
+              .map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-start w-fit items-center gap-4
+                 sm:px-8 px-4 py-4 rounded-[0.7rem] bg-[#1f1f1f] mt-[2rem] menu-shadow border border-[#2f2f2f]"
+                >
+                  <h1 className="text-[1.5rem] font-bold uppercase">
+                    {item.name}
+                  </h1>
+                  <p className="font-bold text-[1.2rem]">{item.price}</p>
+                </div>
+              ))}
           </div>
         </div>
       ))}
