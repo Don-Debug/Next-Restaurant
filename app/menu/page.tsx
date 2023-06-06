@@ -29,15 +29,15 @@ export default function Menu() {
           <div className="w-[100%] m-auto">
             <div
               className="flex justify-center items-center sm:gap-[3rem] gap-6
-           border-b-[2px] py-[2rem] border-white"
+           border-b-[2px] py-[2rem] border-[#1f1f1d]"
             >
               <button onClick={toggleFirstDiv}>
-                <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-[#2F2F2F] sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
+                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md">
                   Bar Menu
                 </h1>
               </button>
               <button onClick={toggleSecondDiv}>
-                <h1 className=" sm:px-[2rem] px-3 py-[1rem] bg-[#2F2F2F] sm:rounded-[1.5rem] rounded-[1rem] box-shadow">
+                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md">
                   Restaurant Menu
                 </h1>
               </button>

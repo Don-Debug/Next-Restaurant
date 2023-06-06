@@ -12,9 +12,9 @@ import { BarLoader } from "react-spinners";
 
 const Loading = () => {
   return (
-    <div className="w-full h-screen flex flex-col gap-[3rem] justify-center items-center bg-[#151515]">
-      <BarLoader color="#fff" height={7} width={200} />
-      <p className="text-[1.8rem] font-bold">Loading...</p>
+    <div className="w-full h-screen flex flex-col gap-[3rem] justify-center items-center bg-[#f1f1f7]">
+      <BarLoader color="#3f3f3f" height={7} width={200} />
+      <p className="text-[1.8rem] font-bold text-[#1f1f1d]">Loading...</p>
     </div>
   );
 };
@@ -70,7 +70,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <About />
-          <Speciality />
+          {/* <Speciality /> */}
           <Galery />
           <Location />
           <Feedbacks />

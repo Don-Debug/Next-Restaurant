@@ -4,12 +4,10 @@ import React, { useState } from "react";
 export default function Bar() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredMenu = RestaurantMenu.filter(
-    (category) =>
-      category.Name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      category.items.some((item) =>
-        item.name.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+  const filteredMenu = RestaurantMenu.filter((category) =>
+    category.items.some((item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    )
   );
 
   return (
@@ -21,7 +19,7 @@ export default function Bar() {
         value={searchQuery}
         autoCorrect="none"
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="px-3 py-3 rounded-lg shadow-sm focus:outline-none block w-full sm:text-sm menu-shadow border border-[#1f1f1f]"
+        className="px-3 py-3 rounded-lg shadow-md focus:outline-none block w-full sm:text-sm border border-[#cdcdcd]"
       />
       {filteredMenu.map((category, index) => (
         <div
@@ -29,8 +27,8 @@ export default function Bar() {
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
         >
           <h1
-            className="bg-[#2F2F2F] px-[1rem] py-[1rem] md:w-[50%] w-[90%] text-center text-[1.5rem]
-           rounded-[1.5rem] box-shadow mt-[5rem] uppercase mx-auto"
+            className="bg-[#f1f1f7] px-[1rem] py-[1rem] md:w-[50%] w-[90%] text-center text-[1.5rem]
+           rounded-[1.5rem] shadow-md mt-[5rem] uppercase mx-auto"
           >
             {category.Name}
           </h1>
@@ -43,7 +41,7 @@ export default function Bar() {
                 <div
                   key={index}
                   className="flex flex-col justify-start w-fit items-center gap-4
-                 sm:px-8 px-4 py-4 rounded-[0.7rem] bg-[#1f1f1f] mt-[2rem] menu-shadow border border-[#2f2f2f]"
+                 sm:px-8 px-4 py-4 rounded-[0.7rem] bg-[#f1f1f7] mt-[2rem] shadow-xl border border-[#cdcdcd]"
                 >
                   <h1 className="text-[1.5rem] font-bold uppercase">
                     {item.name}

@@ -9,7 +9,7 @@ export default function Speciality() {
       <div className="flex justify-around items-center md:flex-row flex-col gap-[1.5rem] mt-[8rem]">
         <div
           className="lg:flex-row sm:flex md:flex-col gap-5 sm:items-start md:items-center lg:items-start items-center
-         bg-[#2F2F2F] px-[2rem] py-[2rem] rounded-[0.8rem] box-shadow"
+         bg-[#f1f1f7] px-[2rem] py-[2rem] rounded-[0.8rem] shadow-2xl"
         >
           <div>
             <Image
@@ -19,9 +19,9 @@ export default function Speciality() {
               height={1000}
               className="w-[15rem] h-[15rem] object-cover rounded-[1rem] pointer-events-none"
             />
-            <h3 className="text-[1.6rem] font-bold p-4">Tave ngjale</h3>
           </div>
           <div className="w-[70%] ">
+            <h3 className="text-[1.6rem] font-bold py-4">Tave ngjale</h3>
             <p className=" w-fit text-[1.2rem]">
               Nje nga specialitetet tona esht tava e ngjales te cilen mund ta
               gatuajm ne dy menyra me patate dhe perime te tjera ose me qepe qe
@@ -31,7 +31,7 @@ export default function Speciality() {
         </div>
         <div
           className="lg:flex-row sm:flex md:flex-col gap-5 sm:items-start md:items-center
-         lg:items-start items-center bg-[#2F2F2F] px-[2rem] py-[2rem] rounded-[0.8rem] box-shadow"
+         lg:items-start items-center bg-[#f1f1f7] px-[2rem] py-[2rem] rounded-[0.8rem] shadow-2xl"
         >
           <div>
             <Image
@@ -41,9 +41,9 @@ export default function Speciality() {
               height={1000}
               className="w-[15rem] h-[15rem] object-cover rounded-[1rem] pointer-events-none"
             />
-            <h3 className="text-[1.6rem] font-bold p-4">Tave ngjale</h3>
           </div>
           <div className="w-[70%]">
+            <h3 className="text-[1.6rem] font-bold py-4">Tave ngjale</h3>
             <p className="w-fit text-[1.2rem]">
               Nje nga specialitetet tona esht tava e ngjales te cilen mund ta
               gatuajm ne dy menyra me patate dhe perime te tjera ose me qepe qe
@@ -56,7 +56,7 @@ export default function Speciality() {
       <div className=" flex justify-center items-center">
         <Link
           href={`/menu`}
-          className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#2F2F2F] box-shadow border-x-[3px] border-white "
+          className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#f1f1f7] shadow-2xl border-x-[3px] border-[#1f1f1d] text-[#1f1f1d] "
         >
           Menuja e plote
         </Link>

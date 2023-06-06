@@ -1,11 +1,13 @@
 import image from "./images/restaurant-1.jpg";
+import fish from "./images/fixed.jpg";
+import fruits from "./images/fixed2.jpg";
 
 const gallery = [
   {
-    image: image,
+    image: fish,
   },
   {
-    image: image,
+    image: fruits,
   },
   {
     image: image,

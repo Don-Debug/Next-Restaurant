@@ -36,14 +36,14 @@ export default function Galery() {
           {galery.slice(0, numDisplayed).map((post, index) => (
             <div
               key={index}
-              className="flex justify-center relative my-shadow md:w-[20rem] sm:w-[15rem] w-[10rem] h-auto overflow-hidden"
+              className="flex justify-center relative shadow-2xl md:w-[20rem] sm:w-[15rem] w-[10rem] h-auto overflow-hidden"
             >
               <Image
                 src={post.image}
                 alt={`${index}`}
                 width={1000}
                 height={1000}
-                className=" w-[100%] md:h-[20rem] sm:h-[15rem] h-[10rem] object-cover pointer-events-none"
+                className=" w-[100%] md:h-[20rem] sm:h-[15rem] h-[10rem] object-cover pointer-events-none rounded-md"
               />
               <button
                 className="px-[1.5rem] py-[0.5rem] bg-transparent absolute w-full h-full"
@@ -54,7 +54,7 @@ export default function Galery() {
         </div>
         {!isExpanded && numDisplayed < galery.length && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#2F2F2F] box-shadow border-x-[3px] border-white "
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-3 rounded-[2rem] bg-[#f1f1f7] shadow-2xl border-x-[3px] border-[#1f1f1d]  text-[#1f1f1d] "
             onClick={handleShowMore}
           >
             Show More
@@ -62,7 +62,7 @@ export default function Galery() {
         )}
         {isExpanded && (
           <button
-            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-4 rounded-[2rem] bg-[#2F2F2F] box-shadow border-x-[3px] border-white "
+            className=" w-fit mx-auto my-[5rem] text-[1.2rem] px-[2rem] py-3 rounded-[2rem]  bg-[#f1f1f7] shadow-2xl border-x-[3px] border-[#1f1f1d]  text-[#1f1f1d]  "
             onClick={handleShowLess}
           >
             Show Less
