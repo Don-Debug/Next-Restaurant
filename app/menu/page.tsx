@@ -32,12 +32,12 @@ export default function Menu() {
            border-b-[2px] py-[2rem] border-[#1f1f1d]"
             >
               <button onClick={toggleFirstDiv}>
-                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md">
+                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md text-[1.1rem] font-semibold uppercase">
                   Bar Menu
                 </h1>
               </button>
               <button onClick={toggleSecondDiv}>
-                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md">
+                <h1 className=" sm:px-[2rem] px-3 py-3 bg-[#f1f1f7] border-x-[3px] border-[#1f1f1d] sm:rounded-[1.5rem] rounded-[1rem] shadow-md text-[1.1rem] font-semibold uppercase">
                   Restaurant Menu
                 </h1>
               </button>

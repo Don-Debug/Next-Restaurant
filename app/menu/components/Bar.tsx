@@ -27,8 +27,8 @@ export default function Bar() {
           className="flex flex-col justify-center items-start gap-[1rem] w-[100%]"
         >
           <h1
-            className="bg-[#f1f1f7] px-[1rem] py-[1rem] md:w-[50%] w-[90%] text-center text-[1.5rem]
-           rounded-[1.5rem] shadow-md mt-[5rem] uppercase mx-auto"
+            className="bg-[#f1f1f7] px-[1rem] py-[1rem] md:w-[50%] w-[90%] text-center text-[1.5rem] font-bold uppercase
+           rounded-[1.5rem] shadow-xl mt-[5rem] mx-auto border-x-[7px] border-[#1f1f1d]"
           >
             {category.Name}
           </h1>
@@ -41,12 +41,10 @@ export default function Bar() {
                 <div
                   key={index}
                   className="flex flex-col justify-start w-fit items-center gap-4
-                 sm:px-8 px-4 py-4 rounded-[0.7rem] bg-[#f1f1f7] mt-[2rem] shadow-xl border border-[#cdcdcd]"
+                 sm:px-8 px-4 py-4 rounded-[0.7rem] bg-[#f1f1f7] mt-[2rem] shadow-md border border-[#cdcdcd]"
                 >
-                  <h1 className="text-[1.5rem] font-bold uppercase">
-                    {item.name}
-                  </h1>
-                  <p className="font-bold text-[1.2rem]">{item.price}</p>
+                  <h1 className="text-[1.5rem] font-light">{item.name}</h1>
+                  <p className="font-light text-[1.2rem]">{item.price}</p>
                 </div>
               ))}
           </div>
