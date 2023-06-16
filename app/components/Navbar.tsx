@@ -12,9 +12,16 @@ export default function Navbar() {
       fixed z-40 w-[100%] top-0 left-0 bg-[#fff] border-b border-[#1f1f1d]"
     >
       <div className=" flex justify-center items-center gap-2 ">
-        <h2 className=" sm:text-[1.8rem] text-[1.3rem] font-bold text-[#1f1f1d]">
-          Teo-Narte
-        </h2>
+        <Link
+          href={`/`}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <h2 className=" sm:text-[1.8rem] text-[1.3rem] font-bold text-[#1f1f1d]">
+            Teo-Narte
+          </h2>
+        </Link>
       </div>
       <div className="flex z-30">
         {toggle ? (
